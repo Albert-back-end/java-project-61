@@ -14,18 +14,21 @@ public class Engine {
         System.out.print("Your choice: ");
         var choice = scanner.nextInt();
 
-        if (choice == 1) {
-            System.out.println(" ");
-            Cli.greetingUser();
-        } else if (choice == 2) {
-            System.out.println(" ");
-
-            Cli.greetingUser();
-            BrainEven.brainEven();
-        } else if (choice == 0){
-            System.exit(0);
-        } else {
-            System.out.println("Uncorrect answer!");
+        switch (choice) {
+            case (1):
+                System.out.println(" ");
+                Cli.greetingUser();
+                break;
+            case (2):
+                System.out.println(" ");
+                Cli.greetingUser();
+                BrainEven.brainEven();
+                break;
+            case (0):
+                System.exit(0);
+                break;
+            default:
+                System.out.println("Uncorrect answer!");
         }
     }
 }
