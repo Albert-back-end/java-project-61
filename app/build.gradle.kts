@@ -21,7 +21,7 @@ dependencies {
 
 tasks {
     compileJava {
-        options.release = 21
+        options.release = 20
     }
 
     getByName("run", JavaExec::class) {
