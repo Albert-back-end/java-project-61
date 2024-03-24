@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.BrainCalc;
 import hexlet.code.games.BrainEven;
 import hexlet.code.games.BrainGSD;
+import hexlet.code.games.BrainProgression;
 
 import java.util.Scanner;
 
@@ -21,6 +22,7 @@ public class App {
         System.out.println(numberOfEven + " - Even");
         System.out.println(numberOfCalc + " - Calc");
         System.out.println(numberOfGSD + " - GSD");
+        System.out.println(numberOfProgression + " - Progression");
         System.out.println(numberOfExit + " - Exit");
 
         var scanner = new Scanner(System.in);
@@ -44,6 +46,9 @@ public class App {
                 Cli.greetingUser();
                 BrainGSD.runGame();
                 break;
+            case (numberOfProgression):
+                Cli.greetingUser();
+                BrainProgression.runGame();
             case (numberOfExit):
                 System.exit(0);
                 break;
