@@ -12,3 +12,6 @@ Brain-GSD game result:
 
 Brain-Progression game result:
 [![asciicast](https://asciinema.org/a/X1i4cOt3xUWhKeJEeMUXQDlv7.svg)](https://asciinema.org/a/X1i4cOt3xUWhKeJEeMUXQDlv7)
+
+Brain-Prime game result:
+[![asciicast](https://asciinema.org/a/7WhMde49Tr04BeQz7zxD9XjNq.svg)](https://asciinema.org/a/7WhMde49Tr04BeQz7zxD9XjNq)
