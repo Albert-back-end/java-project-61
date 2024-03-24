@@ -2,6 +2,8 @@ package hexlet.code;
 
 import hexlet.code.games.BrainCalc;
 import hexlet.code.games.BrainEven;
+import hexlet.code.games.BrainGSD;
+
 import java.util.Scanner;
 
 public class App {
@@ -18,6 +20,7 @@ public class App {
         System.out.println(numberOfGreeting + " - Greet");
         System.out.println(numberOfEven + " - Even");
         System.out.println(numberOfCalc + " - Calc");
+        System.out.println(numberOfGSD + " - GSD");
         System.out.println(numberOfExit + " - Exit");
 
         var scanner = new Scanner(System.in);
@@ -36,6 +39,10 @@ public class App {
             case (numberOfCalc):
                 Cli.greetingUser();
                 BrainCalc.runGame();
+                break;
+            case (numberOfGSD):
+                Cli.greetingUser();
+                BrainGSD.runGame();
                 break;
             case (numberOfExit):
                 System.exit(0);
