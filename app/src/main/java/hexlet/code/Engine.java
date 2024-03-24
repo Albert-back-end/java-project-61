@@ -1,34 +1,30 @@
 package hexlet.code;
 
 import java.util.Scanner;
-import games.BrainEven;
+import hexlet.code.games.BrainEven;
 
 public class Engine {
-    public static void choiceGame() {
-        System.out.println("Please enter the game number and press Enter.");
-        System.out.println("1 - Greet");
-        System.out.println("2 - Even");
-        System.out.println("0 - Exit");
+    public static final int countCycle = 3;
+    public static void engineGame(String mainQuestion, GameRound[] rounds) {
+        System.out.print(mainQuestion);
 
-        var scanner = new Scanner(System.in);
-        System.out.print("Your choice: ");
-        var choice = scanner.nextInt();
+        for (var round: rounds) {
+            var unitedQuestion = "Question: " + round.getQuestion();
+            System.out.println(unitedQuestion);
 
-        switch (choice) {
-            case (1):
-                System.out.println(" ");
-                Cli.greetingUser();
-                break;
-            case (2):
-                System.out.println(" ");
-                Cli.greetingUser();
-                BrainEven.brainEven();
-                break;
-            case (0):
+            var scanner = new Scanner(System.in);
+            System.out.print("Your answer: ");
+            var answer = round.getAnswer();
+            var scanAnswer = scanner.next();
+
+            if (!scanAnswer.equals(answer)){
+                var errorMessage = ("'" + scanAnswer + "' is wrong answer ;(. Correct answer was '" + answer + "'. Let's try again, " + Cli.name + "!");
+                System.out.println(errorMessage);
                 System.exit(0);
-                break;
-            default:
-                System.out.println("Uncorrect answer!");
+            }
+            System.out.println("Correct!");
         }
+
+        System.out.println("Congrulations " + Cli.name + "!");
     }
 }
