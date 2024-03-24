@@ -6,6 +6,9 @@ Brain-Even game result:
 
 Brain-Calc game result:
 [![asciicast](https://asciinema.org/a/JfJ1exLKY1zNsPK7t4JvG92Om.svg)](https://asciinema.org/a/JfJ1exLKY1zNsPK7t4JvG92Om)
+<<<<<<< HEAD
 
 Brain-GSD game result:
 [![asciicast](https://asciinema.org/a/VVai7mropcXOnG34XHl4ijI4R.svg)](https://asciinema.org/a/VVai7mropcXOnG34XHl4ijI4R)
+=======
+>>>>>>> c2d7dd4dfd5032a872a8dc3f98b9a44998338c47
