@@ -25,6 +25,6 @@ public class Engine {
             System.out.println("Correct!");
         }
 
-        System.out.println("Congrulations " + Cli.name + "!");
+        System.out.println("Congratulations " + Cli.name + "!");
     }
 }
