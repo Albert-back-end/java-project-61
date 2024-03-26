@@ -37,6 +37,8 @@ public class BrainProgression {
         var replaceChar = progression.get(indexOfReplaceSymbol);
         progression.set(indexOfReplaceSymbol, "..");
 
-        return new GameRound(progression.toString(), replaceChar);
+        var newString = progression.toString().substring(1, progression.toString().length() - 1);
+
+        return new GameRound(newString, replaceChar);
     }
 }
